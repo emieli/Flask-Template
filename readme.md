@@ -2,10 +2,10 @@
 # Flask Template
 This is a project setup to help beginners get started with Flask. The goal is provide a sample website that show how Flask can be used to build a website following current best practices (to the best of my knowledge).
 ## What the website does
-The main part of the website shows a simple "Hello world!" type message.
-The blog part of the website show you how you can dynamically build webpages.
-By using Flask blueprints, the two parts of the website are separated from each other.
-The website is made pretty using Bootstrap, you can find more info about it here: https://getbootstrap.com/
+- The main part of the website shows a simple "Hello world!" type message.
+- The blog part of the website show you how you can dynamically build webpages.
+- By using Flask blueprints, code for the two parts of the website are separated.
+- The website is made pretty using Bootstrap, you can find more info about it here: https://getbootstrap.com/
 ## How to install
 This guide assumes you have sudo access to a Debian 10 machine. Commands may otherwise be different.
 ### 1. Make sure Debian has the required dependencies
