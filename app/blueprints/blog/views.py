@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for, request
+from flask import Blueprint, render_template, url_for, request, abort
 blog = Blueprint("blog", __name__)
 
 title = "Flask Template Blog"
@@ -40,4 +40,8 @@ def index():
 
 @blog.route('/<int:post_id>')
 def blog_post(post_id):
+
+    if not post_id in blog_posts:
+        abort(404)
+
     return render_template("blog/blog_post.html", title = title, blog_post = blog_posts[post_id])
