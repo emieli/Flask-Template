@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container bg-light col-sm-12 col-md-10 col-lg-8 col-xl-4 mb-3 rounded">
+
+<h2>{{ blog_post['title'] }}</h2>
+<p>{{ blog_post['created'] }}</p>
+
+{% for paragraph in blog_post['paragraphs'] %}
+<p>{{ paragraph }}</p>
+{% endfor %}
+
+</div>
+{% endblock %}
